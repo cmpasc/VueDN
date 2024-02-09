@@ -67,6 +67,8 @@ export default defineUserConfig({
           text: "Songs",
           children: songFiles,
         },
+      ],
+      "/books": [
         {
           text: "Books",
           children: bookFiles,
