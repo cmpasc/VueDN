@@ -8,6 +8,10 @@ let songFiles = glob
   .sync("docs/songs/**/*.md")
   .map((f) => f.replace("docs", "").replace("index.md", ""));
 
+let bookFiles = glob
+  .sync("docs/books/**/*.md")
+  .map((f) => f.replace("docs", "").replace("index.md", ""));
+
 import { description } from "../../package.json";
 
 const __dirname = getDirname(import.meta.url);
@@ -62,6 +66,10 @@ export default defineUserConfig({
         {
           text: "Songs",
           children: songFiles,
+        },
+        {
+          text: "Books",
+          children: bookFiles,
         },
       ],
     },
