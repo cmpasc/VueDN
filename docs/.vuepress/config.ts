@@ -47,7 +47,7 @@ export default defineUserConfig({
         link: "/books/",
       },
       {
-        text: "Using this template",
+        text: "Setup",
         link: "/template/",
       },
       {
